@@ -1,0 +1,152 @@
+/* Reset e Configurações de Base */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', -apple-system, sans-serif; scroll-behavior: smooth; }
+
+/* PALETA DE CORES GLAMOUR & NAIL ART:
+   Fundo Escuro Dark Premium: #0D0D0D
+   Rosa Principal (Marca): #E61B72
+   Rosa Neon Detalhes: #FF409F
+   Texto Claro Confortável: #F5F5F5
+   Destaque Verde WhatsApp: #25D366
+*/
+
+body { background-color: #0D0D0D; color: #F5F5F5; } 
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* Header e Ajuste da Logo */
+header { background-color: rgba(13, 13, 13, 0.98); position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #E61B72; }
+.header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+
+.logo img { height: 50px; width: auto; display: block; object-fit: contain; }
+.logo h2 { color: #FFF; font-weight: 800; letter-spacing: 0.5px; }
+.logo h2 span { color: #E61B72; }
+
+nav a { text-decoration: none; color: #F5F5F5; margin-left: 20px; font-weight: 500; transition: 0.3s; } 
+nav a:hover { color: #FF409F; }
+.btn-nav-whats { background: #25D366; color: #fff; padding: 8px 16px; border-radius: 4px; display: inline-block; font-weight: bold; }
+.btn-nav-whats:hover { background: #1ebd52; }
+
+/* Hero Section com Imagem de Fundo (Igualzinho ao efeito da Toyocar) */
+.hero { 
+    padding: 120px 0; 
+    text-align: center; 
+    background: linear-gradient(180deg, rgba(13,13,13,0.6) 0%, rgba(13,13,13,1) 100%), 
+                url('images/hero-banner.jpg') no-repeat center center;
+    background-size: cover;
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 15px; color: #FFF; text-shadow: 2px 2px 8px rgba(0,0,0,0.8); } 
+.tagline { font-size: 1.3rem; color: #E61B72; font-weight: 600; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 2px; }
+.descricao-breve { max-width: 700px; margin: 0 auto 35px; color: #DDDDDD; line-height: 1.7; font-size: 1.1rem; text-shadow: 1px 1px 3px rgba(0,0,0,0.9); }
+
+.btn-principal { background: #E61B72; color: #fff; padding: 16px 32px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 1.1rem; display: inline-block; transition: 0.3s; border: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 15px rgba(230, 27, 114, 0.4); } 
+.btn-principal:hover { background: #B81056; transform: scale(1.03); box-shadow: 0 6px 20px rgba(230, 27, 114, 0.6); }
+
+/* Customização Extra para Botão Secundário do Instagram */
+.btn-instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); box-shadow: 0 4px 15px rgba(193, 53, 132, 0.4); }
+.btn-instagram:hover { transform: scale(1.03); box-shadow: 0 6px 20px rgba(193, 53, 132, 0.6); }
+
+/* Seção do Slider de Fotos */
+.secao-galeria { padding: 70px 0; background: #121212; text-align: center; border-top: 1px solid #222; border-bottom: 1px solid #222; }
+.secao-galeria h2 { margin-bottom: 40px; font-size: 2.2rem; color: #FFF; position: relative; display: inline-block; }
+.secao-galeria h2::after { content: ''; display: block; width: 60px; height: 3px; background: #E61B72; margin: 10px auto 0; }
+
+.slider-container { position: relative; width: 100%; max-width: 1050px; margin: 0 auto; overflow: hidden; padding: 10px 0; }
+.slider-track { display: flex; transition: transform 0.4s ease-in-out; width: 100%; }
+.slide { min-width: 33.333%; padding: 0 12px; box-sizing: border-box; position: relative; transition: transform 0.3s; }
+
+.slide img { 
+    width: 100%; 
+    height: 380px; 
+    object-fit: cover; 
+    border-radius: 6px; 
+    border: 1px solid #292929;
+}
+.slide-info {
+    position: absolute;
+    bottom: 15px;
+    left: 22px;
+    right: 22px;
+    background: rgba(13, 13, 13, 0.9);
+    color: #FFF;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-left: 3px solid #E61B72;
+    text-align: left;
+}
+.slide:hover { transform: scale(1.02); }
+
+/* Botões do Slider */
+.slider-btn { 
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    background: rgba(13, 13, 13, 0.9); 
+    color: #E61B72; 
+    border: 1px solid #E61B72; 
+    width: 46px;
+    height: 46px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    z-index: 10; 
+    font-size: 1.2rem; 
+    transition: 0.3s;
+} 
+.slider-btn:hover { background: #E61B72; color: #fff; border-color: #E61B72; }
+.prev { left: 8px; } .next { right: 8px; }
+
+/* Bloco Inferior de Contatos e Localização */
+.bg-info-contato { background: #0D0D0D; padding: 70px 0; } 
+.grid-rodape { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 50px; }
+.grid-rodape h3 { margin-bottom: 25px; color: #FFF; font-size: 1.5rem; } 
+.endereco { margin-bottom: 18px; color: #CCCCCC; font-size: 1.05rem; }
+.mapa-wrapper { border: 2px solid #222; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+
+.lista-contatos { list-style: none; }
+.lista-contatos li { margin-bottom: 15px; color: #DDDDDD; font-size: 1.05rem; }
+.lista-contatos strong { color: #E61B72; }
+
+.alerta-servico { 
+    margin-top: 30px; 
+    background: #121212; 
+    padding: 20px; 
+    border-radius: 6px; 
+    border-top: 3px solid #E61B72; 
+}
+.alerta-servico p { font-size: 0.95rem; color: #AAAAAA; line-height: 1.5; text-align: center; font-weight: 500; }
+
+/* Rodapé Final */
+footer { text-align: center; padding: 25px 0; background: #050505; color: #555555; font-size: 0.9rem; border-top: 1px solid #1A1A1A; } 
+
+/* Ajustes de Responsividade */
+@media (max-width: 992px) {
+    .slide { min-width: 50%; }
+}
+@media (max-width: 768px) {
+    .grid-rodape { grid-template-columns: 1fr; gap: 40px; }
+    .slide { min-width: 100%; } 
+    .slider-container { max-width: 90%; }
+    
+    nav a { display: none; }
+    nav .btn-nav-whats { display: inline-block; }
+    
+    .hero h1 { font-size: 2.3rem; }
+    .hero .tagline { font-size: 1.1rem; }
+}
+
+.secao-botao-meio {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #121212;
+}
+
+.link-whats-texto a {
+    color: #E61B72;
+    text-decoration: none;
+}
+.link-whats-texto a:hover {
+    text-decoration: underline;
+}
