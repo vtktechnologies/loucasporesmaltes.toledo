@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Completo - Loucas por Esmaltes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h2><a href="index.html" style="text-decoration:none; color:inherit;">LOUCAS<span> POR ESMALTES</span></a></h2>
+            </div>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="catalogo.html" class="active">Catálogo</a>
+                <a href="#" id="abrir-carrinho-mobile" class="btn-nav-whats">🛒 Carrinho (<span id="contagem-carrinho-nav">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container layout-catalogo">
+        <main class="vitrine-produtos">
+            <h2 class="titulo-secao">Produtos Disponíveis</h2>
+            <div class="grid-produtos" id="grid-produtos">
+                </div>
+        </main>
+
+        <aside class="carrinho-container" id="carrinho-lateral">
+            <h3>Seu Pedido</h3>
+            <div class="itens-carrinho" id="itens-carrinho">
+                <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+            </div>
+            <div class="total-carrinho">
+                <span>Total Geral:</span>
+                <span id="valor-total-carrinho">R$ 0,00</span>
+            </div>
+            <button id="btn-finalizar-whats" class="btn-principal" style="width: 100%; display: block; margin-top: 15px;">Finalizar no WhatsApp</button>
+        </aside>
+    </div>
+
+    <footer>
+        <p>© 2026 Loucas por Esmaltes - Toledo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

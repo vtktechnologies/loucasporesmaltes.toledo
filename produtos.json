@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "nome": "Esmalte Premium Anita",
+    "categoria": "Esmaltes",
+    "foto": "images/products/esmalte-anita.png",
+    "valor": 45.00,
+    "cores": {
+      "Verde Neon": "#39FF14",
+      "Vermelho Glamour": "#E61B72",
+      "Nude Clássico": "#D2B48C"
+    }
+  },
+  {
+    "id": 2,
+    "nome": "Gel para Alongamento Volia",
+    "categoria": "Alongamento",
+    "foto": "images/products/gel-volia.png",
+    "valor": 99.90,
+    "cores": {
+      "Pink": "#FFC0CB",
+      "Classic Crystal": "#FFFFFF"
+    }
+  },
+  {
+    "id": 3,
+    "nome": "Top Coat Selante",
+    "categoria": "Finalizadores",
+    "foto": "images/products/top-coat.png",
+    "valor": 35.00,
+    "cores": {
+      "Transparente Translucido": "#F5F5F5"
+    }
+  }
+]
